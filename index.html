@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./reset.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Formulário</title>
+    <title>Login</title>
 </head>
-
-<body class="flex items-center justify-center">
-    <div class="w-[360px] h-[640px] bg-red-500 content-center justify-items-center">
-        <h1 class="text-[48px] text-white">Criar Conta</h1>
-        <img src="./img/redes-sociais.png" alt="Redes sociais">
-        <p class="text-[14px] text-white">ou cadastre seu email</p>
-        <div class="flex flex-col items-center justify-center gap-2">
-            <input type="text" placeholder="     Nome" class="w-[290px] h-[39px] bg-gray-100 px-3 rounded-md" />
-            <input type="email" placeholder="     Email" class="w-[290px] h-[39px] bg-gray-100 px-3 rounded-md" />
-            <input type="password" placeholder="     Senha" class="w-[290px] h-[39px] bg-gray-100 px-3 rounded-md" />
-        </div>
+<body class="bg-red-600">
+    <div class="text-white text-5xl flex justify-center mt-20 mb-10">Criar Conta</div>
+    <div class="item-center justify-center flex w-full h-12 gap-3">
+        <img src="./img/redes-sociais.png" alt="Logos de Redes Sociais">
     </div>
+    <div class="flex justify-center mt-5 mb-5">
+        <p class="text-white">ou cadastre seu email</p>
+    </div>
+    <div class="flex justify-center">
+        <div class="w-80 space-y-4">
+            <input type="text" placeholder="Nome" class="w-full bg-gray-200 p-3 rounded text-gray-700 placeholder-gray-500" />
+            <input type="email" placeholder="Email" class="w-full bg-gray-200 p-3 rounded text-gray-700 placeholder-gray-500" />
+            <input type="password" placeholder="Senha" class="w-full bg-gray-200 p-3 rounded text-gray-700 placeholder-gray-500" />
+            <button class="block mx-auto text-white font-semibold px-10 py-2 rounded-full border-2 border-white uppercase">Cadastrar</button>
+            <div class="flex gap-1 text-white justify-center">
+                <p>Já tem conta?</p>
+                <p class="font-bold">Login</p>
+            </div>
+        </div>
 </body>
-
 </html>
